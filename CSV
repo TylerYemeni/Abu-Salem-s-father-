@@ -1,2 +1,2 @@
-timestamp,latitude,longitude,root_status,cell_info
-2025-04-16 10:15:00,15.3694,44.1910,Rooted,LTE-420-01-CID32888
+timestamp,network_type,mcc,mnc,lac,cell_id,signal_strength,root_status,raw_info
+1713278654000,LTE,420,01,31012,3288811,-87,Rooted,cellIdentity=CellIdentityLte{...}
