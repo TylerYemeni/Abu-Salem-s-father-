@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NetSentinel AI</string>
+    <string name="password_hint">أدخل كلمة المرور</string>
+    <string name="login_button">دخول</string>
+</resources>
