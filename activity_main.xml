@@ -3,24 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="24dp"
     android:gravity="center"
-    android:background="#1B1B1B"
-    android:padding="24dp">
+    android:background="#1A1A1A">
 
-    <TextView
-        android:id="@+id/welcomeText"
-        android:text="..."
-        android:textColor="#00E676"
-        android:textSize="18sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnStartLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ابدأ تتبع الموقع"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnOpenMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="افتح الخريطة"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnCheckRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="فحص الروت"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"/>
 
     <TextView
         android:id="@+id/rootStatus"
-        android:text="..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="حالة الروت ستظهر هنا"
         android:textColor="#FFEB3B"
+        android:layout_marginTop="24dp"
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:gravity="center" />
 </LinearLayout>
