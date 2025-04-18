@@ -1,5 +1,16 @@
 <resources>
+    <!-- اسم التطبيق -->
     <string name="app_name">NetSentinel AI</string>
+
+    <!-- شاشة تسجيل الدخول -->
     <string name="password_hint">أدخل كلمة المرور</string>
     <string name="login_button">دخول</string>
+    <string name="wrong_password">كلمة المرور غير صحيحة</string>
+    <string name="login_success">تم تسجيل الدخول</string>
+
+    <!-- الشاشة الرئيسية -->
+    <string name="start_location">ابدأ تتبع الموقع</string>
+    <string name="open_map">افتح الخريطة</string>
+    <string name="check_root">فحص الروت</string>
+    <string name="root_status">حالة الروت ستظهر هنا</string>
 </resources>
