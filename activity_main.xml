@@ -1,45 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center"
-    android:background="#1A1A1A">
+    android:background="#1A1A1A"
+    android:padding="24dp">
 
-    <Button
-        android:id="@+id/btnStartLocation"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ابدأ تتبع الموقع"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#4CAF50"
-        android:textColor="#FFFFFF"/>
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/btnOpenMap"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="افتح الخريطة"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#2196F3"
-        android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00E676"
+            android:textSize="18sp"
+            android:text="مرحبًا بك"
+            android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/btnCheckRoot"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="فحص الروت"
-        android:backgroundTint="#FF9800"
-        android:textColor="#FFFFFF"/>
+        <Button
+            android:id="@+id/btnStartLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ابدأ تتبع الموقع"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
 
-    <TextView
-        android:id="@+id/rootStatus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="حالة الروت ستظهر هنا"
-        android:textColor="#FFEB3B"
-        android:layout_marginTop="24dp"
-        android:textSize="16sp"
-        android:gravity="center" />
-</LinearLayout>
+        <Button
+            android:id="@+id/btnOpenMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="افتح الخريطة"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnCheckRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="فحص الروت"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnAnalyzeCell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تحليل الشبكة (بروت)"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/rootStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حالة الروت ستظهر هنا"
+            android:textColor="#FFEB3B"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نتائج التحليل ستظهر هنا"
+            android:textColor="#00FF00"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:background="#222222"
+            android:padding="8dp" />
+    </LinearLayout>
+</ScrollView>
